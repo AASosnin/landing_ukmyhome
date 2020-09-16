@@ -1,0 +1,67 @@
+@import "./global/fonts.scss";
+@import "./global/nullstyle.scss";
+@import "./global/colors.scss";
+
+.header {
+  position: relative;
+
+  .left-rectangle {
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 50px 50px 0px;
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    left: 0px;
+    min-width: 1200 / 1440 * 100%;
+    height: 220px;
+    animation: left_go 1s ease-in 1s 1;
+    @keyframes left_go {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+  }
+  .right-rectangle {
+    background: $blueColor3;
+    opacity: 0.8;
+    border-radius: 0px 0px 0px 100px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    right: 0px;
+    min-width: 1100 / 1400 *100%;
+    height: 330px;
+  }
+  .right-rectangle-bg {
+    background: url(../../img/header-bg.jpg) no-repeat center center;
+    background: #000;
+    border-radius: 0px 0px 0px 100px;
+    border-color: #000;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    min-width: 1100 / 1400 *100%;
+    height: 330px;
+  }
+  .header-info {
+    .header-info__logo {
+    }
+    .header-info__text {
+      .line {
+      }
+      .header-info__text2 {
+      }
+      .header-info__btn {
+        .send-form-btn {
+        }
+      }
+    }
+  }
+}
+
