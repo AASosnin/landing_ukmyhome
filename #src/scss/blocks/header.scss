@@ -1,8 +1,9 @@
 @import "./global/fonts.scss";
-@import "./global/nullstyle.scss";
 @import "./global/colors.scss";
 
-.header {
+header {
+  border: 1px solid #000;
+  height: 400px;
   position: relative;
 
   .left-rectangle {
@@ -10,12 +11,12 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 50px 50px 0px;
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     top: 30px;
     left: 0px;
     min-width: 1200 / 1440 * 100%;
     height: 220px;
-    animation: left_go 1s ease-in 1s 1;
+    animation: left_go 1s ease-in 0s 1;
     @keyframes left_go {
       from {
         transform: translateX(-100%);
@@ -24,42 +25,126 @@
         transform: translateX(0);
       }
     }
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .header-info {
+      height: 200px;
+      width: 85%;
+      display: flex;
+      justify-content: space-around;
+
+      .header-info__logo {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .header-info__text {
+        // border: 1px solid #000;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .header-info__text1 {
+          // border: 1px solid #000;
+          h1 {
+            font-family: $globalFont;
+            color: $greyColor;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 31px;
+
+            span {
+              color: $redColor;
+            }
+          }
+        }
+
+        .line {
+          height: 1px;
+          background-color: rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .header-info__text2 {
+          // border: 1px solid #000;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .header-info__text2__text {
+            // border: 1px solid #000;
+            font-family: $globalFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            color: $greyColor;
+
+            span {
+              color: $redColor;
+            }
+          }
+
+          .header-info__btn {
+            // border: 1px solid #000;
+            .send-form-btn {
+              color: $superRedColor;
+              font-family: $globalFont;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 24px;
+              line-height: 31px;
+              width: 290px;
+              height: 60px;
+              background: #FFFFFF;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 30px;
+            }
+          }
+        }
+      }
+    }
   }
   .right-rectangle {
     background: $blueColor3;
     opacity: 0.8;
     border-radius: 0px 0px 0px 100px;
     position: absolute;
-    z-index: 2;
-    top: 0px;
-    right: 0px;
-    min-width: 1100 / 1400 *100%;
-    height: 330px;
-  }
-  .right-rectangle-bg {
-    background: url(../../img/header-bg.jpg) no-repeat center center;
-    background: #000;
-    border-radius: 0px 0px 0px 100px;
-    border-color: #000;
-    position: absolute;
-    display: flex;
     z-index: 1;
     top: 0px;
     right: 0px;
     min-width: 1100 / 1400 *100%;
-    height: 330px;
+    height: 300px;
+
   }
-  .header-info {
-    .header-info__logo {
-    }
-    .header-info__text {
-      .line {
+  .right-rectangle-bg {
+    background: url(../../img/header-bg.jpg) no-repeat center center;
+    border-radius: 0px 0px 0px 100px;
+    border-color: #000;
+    position: absolute;
+    display: flex;
+    top: 0px;
+    right: 0px;
+    min-width: 1100 / 1400 *100%;
+    height: 300px;
+
+    animation: right_go 0.7s ease-in 0s 1;
+    @keyframes right_go {
+      from {
+        opacity: 0;
       }
-      .header-info__text2 {
-      }
-      .header-info__btn {
-        .send-form-btn {
-        }
+      to {
+        opacity: 100;
       }
     }
   }
