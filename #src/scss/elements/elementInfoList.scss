@@ -1,0 +1,180 @@
+
+.element-info-list {
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px 20px;
+  min-width: 768px;
+  background-color: #ffffff;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+
+    .element-info-list__li {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 0px;
+
+      .element-info-list__li-wrapp {
+        display: flex;
+        align-items: center;
+
+        .element-info-list__num {
+          border-radius: 50%;
+          width: 54px;
+          height: 54px;
+          background-color: $blueColor3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 50%;
+          margin: 0 22px 0 0;
+
+          span {
+            font-family: $globalFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 31px;
+            color: #ffffff;
+          }
+
+        }
+
+        .element-info-list__text {
+          font-family: $globalFont;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 23px;
+          color: $textColor;
+          margin: 0 22px 0 0;
+        }
+
+        .element-info-list__info-btn-wrapper {
+          height: 1px;
+          background-color: $blueColor3;
+          flex-grow: 1;
+          position: relative;
+
+          // Кнопка открытия info
+          .element-info-list__info-btn {
+            position: absolute;
+            top: -16px;
+            right: 20px;
+            width: 32px;
+            height: 32px;
+            border: 1px solid $blueColor3;
+            border-radius: 50%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            // Стрелка для кнопки
+
+            .arrow-2 {
+              // border: 1px solid #000;
+              cursor: pointer;
+              height: 15px;
+              width: 0px;
+              position: relative;
+              margin: 0px;
+              transform: rotate(90deg);
+            }
+            .arrow-2-top,
+            .arrow-2-bottom {
+                background: $blueColor3;
+                height: 1px;
+                left: -6px;
+                position: absolute;
+                top: 7px;
+                width: 10px;
+            }
+            .arrow-2-top {
+                top: 7px;
+            }
+            .arrow-2-top {
+                transform: rotate(45deg);
+                transform-origin: bottom right;
+            }
+            .arrow-2-bottom {
+                transform: rotate(-45deg);
+                transform-origin: top right;
+            }
+            .arrow-2-top::after,
+            .arrow-2-bottom::after {
+                background: $textColor;
+                content: '';
+                height: 100%;
+                position: absolute;
+                top: 0;
+                transition: all 0.15s;
+            }
+            .arrow-2-top::after {
+                left: 100%;
+                right: 0;
+                transition-delay: 0s;
+            }
+            .arrow-2-bottom::after {
+                left: 0;
+                right: 100%;
+                transition-delay: 0.15s;
+            }
+
+            // Стрелка для кнопки /
+          }
+
+          .element-info-list__info-btn:hover {
+            .arrow-2-top::after {
+              left: 0;
+              transition-delay: 0.15s;
+            }
+            .arrow-2-bottom::after {
+              right: 0;
+              transition-delay: 0s;
+            }
+          }
+        }
+
+      }
+
+      .element-info-list__li-info {
+        align-self: center;
+        max-width: 608px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 8px 22px;
+        border: 1px solid $blueColor3;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        opacity: 100%;
+        transition: all 200ms ease-in;
+
+        p {
+          font-family: $globalFont;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 23px;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.05em;
+          color: $textColor;
+        }
+      }
+
+      .element-info-list__li-info-close {
+        height: 0;
+        opacity: 0%;
+        transform: translateY(-100px);
+        transition: all 200ms ease-in;
+      }
+
+    }
+  }
+}
+

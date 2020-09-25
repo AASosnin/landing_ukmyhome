@@ -1,1 +1,1 @@
-@@include('alert.js')
+@@include('./elements/elementInfoList.js');
