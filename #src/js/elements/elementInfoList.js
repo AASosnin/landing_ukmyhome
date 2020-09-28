@@ -73,7 +73,6 @@ elementInfoList.appendChild(elementInfoListTemplate);
 
 const infoListBtnOpen = document.querySelectorAll(".element-info-list__info-btn");
 const allBlocks = document.querySelectorAll(".element-info-list__li-info");
-console.log(allBlocks);
 
 infoListBtnOpen.forEach((btn) => {
   btn.addEventListener("click", (e) => {

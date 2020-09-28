@@ -1,0 +1,161 @@
+.whatisfranchise {
+  width: 100%;
+  // height: 500px;
+  background-image: url(../../img/bg_whatisfranchise.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: -3;
+
+
+  .whatisfranchise__bg-top {
+  }
+  .whatisfranchise__bg-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -2;
+
+  }
+  .whatisfranchise__bg-bottom {
+  }
+  .whatisfranchise__wrap {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 0 50px;
+
+    .whatisfranchise__h2 {
+
+      h2 {
+        font-family: $globalFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        color: $textColorWhite;
+      }
+    }
+    .whatisfranchise__line {
+      margin: 15px 0 35px;
+      width: 546px;
+      height: 1px;
+      background-color: $textColorWhite;
+    }
+    .whatisfranchise__body {
+      width: 100%;
+      display: flex;
+      // justify-content: space-between;
+
+      .whatisfranchise__body-left {
+        // border: 1px solid red;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0px;
+        padding: 0 5px;
+
+        .whatisfranchise__body-left-logo {
+          width: 230px;
+          height: 230px;
+          border-radius: 50%;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 0 10px;
+
+          .whatisfranchise__body-left-logo-logo {
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .whatisfranchise__body-left-text {
+          max-width: 230px;
+          background-color: #ffffff;
+          border-radius: 5px;
+          padding: 15px;
+          text-align: center;
+
+          p {
+            font-family: $globalFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 21px;
+            color: $textColor;
+          }
+        }
+      }
+
+      .whatisfranchise__body-line {
+        margin: 15px 0 35px;
+        width: 1px;
+        height: 100%;
+        background-color: $textColorWhite;
+      }
+
+      .whatisfranchise__body-right {
+        width: 70%;
+        padding: 0 5px;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          li {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 0 10px;
+
+            .whatisfranchise__body-right-num {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 54px;
+              height: 54px;
+              border-radius: 50%;
+              background-color: #ffffff;
+
+              span {
+                font-family: $globalFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                color: $redColor;
+              }
+            }
+            .whatisfranchise__body-right-text {
+              padding: 15px;
+              border-radius: 5px;
+              max-width: 80%;
+              background-color: #ffffff;
+
+              p {
+                font-family: $globalFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 21px;
+                text-align: center;
+                color: $textColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
