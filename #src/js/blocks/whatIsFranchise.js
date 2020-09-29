@@ -16,7 +16,6 @@ const whatisfranchiseList = [
 
 // Template
 const elementWhatIsFranchise = document.querySelector(".whatisfranchise__body-right");
-console.log(elementWhatIsFranchise);
 const elementWhatIsFranchiseTemplate = document.createElement("ul");
 i = 1; //todo инкапсулировать функцию
 whatisfranchiseList.forEach((el) => {

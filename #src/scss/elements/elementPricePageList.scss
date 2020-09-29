@@ -1,0 +1,45 @@
+.pricepagelist {
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      border: 1px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 0 15px;
+
+      .pricepagelist__num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background-color: $redColor;
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        span {
+          font-family: $globalFont;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 23px;
+          color: #ffffff;
+        }
+      }
+      .pricepagelist__text {
+        max-width: 80%;
+
+        p {
+          font-family: $globalFont;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 31px;
+          color: $textColor;
+        }
+      }
+    }
+  }
+}

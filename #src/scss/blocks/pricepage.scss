@@ -1,0 +1,59 @@
+.pricepage {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .pricepage__bg {
+  }
+  .pricepage__bg-shadow {
+  }
+  .pricepage__bg-top {
+  }
+  .pricepage__bg-bottom {
+  }
+  .pricepage__wrap {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .pricepage__h2 {
+      h2 {
+        font-family: $globalFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        color: $textColor;
+      }
+    }
+    .pricepage__line {
+      margin: 15px 0 35px;
+      width: 546px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+    .pricepage__body {
+      display: flex;
+
+      .pricepage__list {
+        display: flex;
+        flex-direction: column;
+      }
+      .pricepage__btn {
+      }
+    }
+    .pricepage__line2 {
+      margin: 15px 0 35px;
+      width: 546px;
+      height: 1px;
+      background-color: $redColor;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+    }
+    .pricepage__footer {
+    }
+  }
+}
