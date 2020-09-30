@@ -1,5 +1,4 @@
 header {
-  // border: 1px solid #000;
   height:300px;
   position: relative;
 
@@ -14,6 +13,7 @@ header {
     min-width: 1200 / 1440 * 100%;
     height: 220px;
     animation: left_go 1s ease-in 0s 1;
+
     @keyframes left_go {
       from {
         transform: translateX(-100%);
@@ -44,14 +44,12 @@ header {
       }
 
       .header-info__text {
-        // border: 1px solid #000;
         width: 70%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
 
         .header-info__text1 {
-          // border: 1px solid #000;
           h1 {
             font-family: $globalFont;
             color: $greyColor;
@@ -73,13 +71,11 @@ header {
         }
 
         .header-info__text2 {
-          // border: 1px solid #000;
           display: flex;
           justify-content: space-around;
           align-items: center;
 
           .header-info__text2__text {
-            // border: 1px solid #000;
             font-family: $globalFont;
             font-style: normal;
             font-weight: bold;
@@ -93,7 +89,6 @@ header {
           }
 
           .header-info__btn {
-            // border: 1px solid #000;
             .send-form-btn {
               color: $superRedColor;
               font-family: $globalFont;

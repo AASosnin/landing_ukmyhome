@@ -3,14 +3,13 @@
     display: flex;
     flex-direction: column;
     li {
-      border: 1px solid #000;
       display: flex;
       align-items: center;
-      justify-content: space-around;
       margin: 0 0 15px;
 
       .pricepagelist__num {
         display: flex;
+        flex-shrink: 0;
         justify-content: center;
         align-items: center;
         width: 54px;
@@ -18,6 +17,7 @@
         border-radius: 50%;
         background-color: $redColor;
         box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin: 0 42px 0 0;
 
         span {
           font-family: $globalFont;
@@ -29,7 +29,6 @@
         }
       }
       .pricepagelist__text {
-        max-width: 80%;
 
         p {
           font-family: $globalFont;

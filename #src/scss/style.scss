@@ -9,9 +9,19 @@
 @import "./blocks/whatisfranchise.scss";
 @import "./blocks/ukortszh.scss";
 @import "./blocks/pricepage.scss";
+@import "./blocks/doppage.scss";
 
 // Элементы
 @import "./elements/elementInfoList.scss";
 @import "./elements/elementBodyCard.scss";
 @import "./elements/elementPricePageList.scss";
 @import "./elements/elementPricePageBlocks.scss";
+
+// Global
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p, span {
+  cursor: default;
+}

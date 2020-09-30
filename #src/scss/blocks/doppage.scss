@@ -1,0 +1,169 @@
+.doppage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 39px 0;
+
+  .doppage__h2 {
+    h2 {
+      font-family: $globalFont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 31px;
+      color: $textColor;
+    }
+  }
+  .doppage__line {
+    margin: 15px 0 35px;
+    width: 546px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  .doppage__body {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 19px;
+
+    .doppage__body-elements {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 10px;
+
+      .doppage__body-element-icon {
+        margin-bottom: 12px;
+        width: 146px;
+        height: 146px;
+        background-color: $redColor;
+        border-radius: 50%;
+        transition: all 200ms ease-in;
+
+        img {
+          height: 90px;
+        }
+      }
+
+      .doppage__body-element-icon-hover {
+        margin-bottom: 12px;
+        width: 146px;
+        height: 146px;
+        background-color: $greyColor;
+        border-radius: 50%;
+        transition: all 200ms ease-in;
+
+        img {
+          height: 100px;
+          background-color: $greyColor;
+          animation: flip-vertical-bck 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+          @keyframes flip-vertical-bck {
+            0% {
+              -webkit-transform: translateZ(0) rotateY(0);
+                      transform: translateZ(0) rotateY(0);
+            }
+            100% {
+              -webkit-transform: translateZ(-260px) rotateY(-180deg);
+                      transform: translateZ(-260px) rotateY(-180deg);
+            }
+          }
+        }
+      }
+
+      .doppage__body-element-icon-active {
+        margin-bottom: 12px;
+        width: 200px;
+        height: 200px;
+        background-color: $blueColor3;
+        border-radius: 50%;
+        transition: all 200ms ease-in;
+
+        img {
+          height: 123px;
+          background-color: $redColor;
+          animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+          @keyframes scale-up-center {
+            0% {
+              -webkit-transform: scale(0.5);
+                      transform: scale(0.5);
+            }
+            100% {
+              -webkit-transform: scale(1);
+                      transform: scale(1);
+            }
+          }
+        }
+      }
+
+      .doppage__body-element-text {
+
+        span {
+          font-family: $globalFont;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 26px;
+          color: $textColor;
+        }
+      }
+    }
+  }
+  .doppage__body-text {
+    height: 0;
+    opacity: 0;
+    padding: 8px 22px;
+    // transform: translateX(-200px);
+    align-self: center;
+    max-width: 70vw;
+    display: flex;
+    justify-content: center;
+    border: 1px solid $blueColor3;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    transition: all 200ms ease-in;
+
+    p {
+      font-family: $globalFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.05em;
+      color: $textColor;
+    }
+  }
+
+  .doppage__body-text-open {
+    height: 100%;
+    opacity: 1;
+    // transform: translateY(0px);
+    transition: all 200ms ease-in;
+    animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+    @keyframes scale-up-ver-top {
+      0% {
+        -webkit-transform: scaleY(0.4);
+                transform: scaleY(0.4);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+      }
+      100% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+      }
+    }
+  }
+
+  .doppage__body-text-none {
+    display: none;
+  }
+}
