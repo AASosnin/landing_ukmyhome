@@ -1,0 +1,94 @@
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: $blueColor;
+  display: flex;
+  justify-content: center;
+  padding: 56px 0 88px;
+  z-index: -2;
+  overflow: hidden;
+
+  .footer__bg {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 40%;
+    height: 100%;
+    background-image: url(../img/footer_bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+  }
+  .footer__wrap {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer__h2 {
+      font-family: $globalFont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 31px;
+      color: $textColorWhite;
+    }
+    .footer__line {
+      margin: 15px 0 35px;
+      width: 546px;
+      height: 1px;
+      background-color:#ffffff;
+    }
+    .footer__body {
+      display: flex;
+      justify-content: center;
+
+      .footer__body-contacts {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .footer__body-header {
+          font-family: $globalFont;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 31px;
+          color: $textColorWhite;
+          text-align: center;
+        }
+        .footer__body-contacts-contacts {
+          padding: 32px 0 20px;
+        }
+      }
+      .footer__body-line {
+        margin: 15px 0 15px;
+        width: 1px;
+        height: 100%;
+        background-color:#ffffff;
+      }
+      .footer__body-form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .footer__body-header {
+          h3 {
+            font-family: $globalFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 31px;
+            color: $textColorWhite;
+            text-align: center;
+          }
+        }
+        .footer__body-form-form {
+          padding: 32px 0 20px;
+        }
+      }
+    }
+  }
+}

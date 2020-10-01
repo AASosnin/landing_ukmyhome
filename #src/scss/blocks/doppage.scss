@@ -58,9 +58,9 @@
         img {
           height: 100px;
           background-color: $greyColor;
-          animation: flip-vertical-bck 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+          animation: doppage__flip-vertical-bck 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 
-          @keyframes flip-vertical-bck {
+          @keyframes doppage__flip-vertical-bck {
             0% {
               -webkit-transform: translateZ(0) rotateY(0);
                       transform: translateZ(0) rotateY(0);
@@ -84,9 +84,9 @@
         img {
           height: 123px;
           background-color: $redColor;
-          animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: doppage__scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
-          @keyframes scale-up-center {
+          @keyframes doppage__scale-up-center {
             0% {
               -webkit-transform: scale(0.5);
                       transform: scale(0.5);
@@ -145,9 +145,9 @@
     opacity: 1;
     // transform: translateY(0px);
     transition: all 200ms ease-in;
-    animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: doppage__scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
-    @keyframes scale-up-ver-top {
+    @keyframes doppage__scale-up-ver-top {
       0% {
         -webkit-transform: scaleY(0.4);
                 transform: scaleY(0.4);

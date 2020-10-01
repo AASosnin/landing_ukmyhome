@@ -181,9 +181,9 @@
         opacity: 1;
         // transform: translateY(0px);
         transition: all 200ms ease-in;
-        animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: element-info-list__scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
-        @keyframes scale-up-ver-top {
+        @keyframes element-info-list__scale-up-ver-top {
           0% {
             -webkit-transform: scaleY(0.4);
                     transform: scaleY(0.4);

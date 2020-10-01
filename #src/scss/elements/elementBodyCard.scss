@@ -7,7 +7,6 @@
     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     padding: 45px 50px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +22,8 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 18px;
+      transition: all 200ms ease-in;
+
 
       span {
         font-family: $globalFont;
@@ -42,6 +43,21 @@
         font-size: 18px;
         line-height: 23px;
         color: $textColor82;
+        transition: all 100ms ease-in;
+      }
+    }
+  }
+  .bodycard:hover {
+    .bodycard__header {
+      background-color: $redColor;
+      transition: all 200ms ease-in;
+    }
+    .bodycard__text {
+      p {
+        font-size: 20px;
+        line-height: 27px;
+        color: $textColor;
+        transition: all 100ms ease-in;
       }
     }
   }

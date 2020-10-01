@@ -5,3 +5,4 @@
 @@include('./blocks/pricePage.js');
 @@include('./elements/elementPricePageBlocks.js');
 @@include('./blocks/dopPage.js');
+@@include('./elements/elementContacts.js');

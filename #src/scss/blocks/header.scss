@@ -12,9 +12,9 @@ header {
     left: 0px;
     min-width: 1200 / 1440 * 100%;
     height: 220px;
-    animation: left_go 1s ease-in 0s 1;
+    animation: header__left_go 1s ease-in 0s 1;
 
-    @keyframes left_go {
+    @keyframes header__left_go {
       from {
         transform: translateX(-100%);
       }
@@ -90,6 +90,8 @@ header {
 
           .header-info__btn {
             .send-form-btn {
+              position: relative;
+              display: block;
               color: $superRedColor;
               font-family: $globalFont;
               font-style: normal;
@@ -101,6 +103,39 @@ header {
               background: #FFFFFF;
               box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
               border-radius: 30px;
+              overflow: hidden;
+              transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+            }
+
+            .send-form-btn:hover {
+              color: #ffffff !important;
+              background-color: transparent;
+              text-shadow: nthree;
+            }
+
+            .send-form-btn:hover:before {
+              left: 0%;
+              right: auto;
+              width: 100%;
+            }
+
+            .send-form-btn:before {
+              display: block;
+              position: absolute;
+              top: 0px;
+              right: 0px;
+              height: 100%;
+              width: 0px;
+              z-index: -1;
+              content: '';
+              color: #ffffff !important;
+              background: $blueColor3;
+              transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+            }
+            .send-form-btn:active {
+              background-color: $greyColor;
+              box-shadow: none;
+              transition: all 50ms ease-in;
             }
           }
         }
@@ -130,8 +165,8 @@ header {
     min-width: 1100 / 1400 *100%;
     height: 300px;
 
-    animation: right_go 0.7s ease-in 0s 1;
-    @keyframes right_go {
+    animation: header__right_go 0.7s ease-in 0s 1;
+    @keyframes header__right_go {
       from {
         opacity: 0;
       }

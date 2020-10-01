@@ -95,5 +95,11 @@
         color: $textColor82;
       }
     }
+    .ukortszh__footer:hover {
+      transition: all 100ms ease-in;
+      p {
+        color: $textColor;
+      }
+    }
   }
 }

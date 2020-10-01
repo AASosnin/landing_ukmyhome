@@ -10,12 +10,15 @@
 @import "./blocks/ukortszh.scss";
 @import "./blocks/pricepage.scss";
 @import "./blocks/doppage.scss";
+@import "./blocks/footer.scss";
 
 // Элементы
 @import "./elements/elementInfoList.scss";
 @import "./elements/elementBodyCard.scss";
 @import "./elements/elementPricePageList.scss";
 @import "./elements/elementPricePageBlocks.scss";
+@import "./elements/elementContacts.scss";
+@import "./elements/elementContactForm.scss";
 
 // Global
 body {
