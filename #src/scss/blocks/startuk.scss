@@ -4,18 +4,18 @@
   position: relative;
 
   .startuk__bg-img {
-    opacity: 10%;
+    opacity: 50%;
     position: absolute;
     width: 100%;
     height: 80%;
     z-index: -2;
-    background-image: url(../../img/bg_startuk1.jpg);
+    background-image: url(/../img/startuk_bg.svg);
     background-size: 100%;
     overflow: hidden;
   }
 
   .startuk__bg-blue {
-    opacity: 20%;
+    opacity: 50%;
     background-color: $blueColor3;
     position: absolute;
     z-index: -1;

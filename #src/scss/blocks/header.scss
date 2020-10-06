@@ -3,16 +3,16 @@ header {
   position: relative;
 
   .left-rectangle {
-    background: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
     border-radius: 0px 50px 50px 0px;
     position: absolute;
-    z-index: 2;
-    top: 30px;
+    z-index: 0;
+    top: 15px;
     left: 0px;
     min-width: 1200 / 1440 * 100%;
     height: 220px;
-    animation: header__left_go 1s ease-in 0s 1;
+    animation: header__left_go 0.5s ease-in 0s 1;
 
     @keyframes header__left_go {
       from {
@@ -34,6 +34,9 @@ header {
 
       .header-info__logo {
         width: 120px;
+        // height: 120px;
+        // border-radius: 50%;
+        // background-color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -52,14 +55,14 @@ header {
         .header-info__text1 {
           h1 {
             font-family: $globalFont;
-            color: $greyColor;
+            color: $textColorWhite;
             font-style: normal;
             font-weight: bold;
             font-size: 24px;
             line-height: 31px;
 
             span {
-              color: $redColor;
+              color: $superRedColor;
             }
           }
         }
@@ -81,10 +84,10 @@ header {
             font-weight: bold;
             font-size: 18px;
             line-height: 23px;
-            color: $greyColor;
+            color: $textColorWhite;
 
             span {
-              color: $redColor;
+              color: $superRedColor;
             }
           }
 
@@ -143,23 +146,25 @@ header {
     }
   }
   .right-rectangle {
-    background: $blueColor3;
-    opacity: 0.8;
+    background-image: url("../img/header_bg.svg");
+    background-size: 100%;
+    background-position: bottom;
     border-radius: 0px 0px 0px 100px;
     position: absolute;
-    z-index: 1;
+    display: flex;
     top: 0px;
     right: 0px;
     min-width: 1100 / 1400 *100%;
     height: 300px;
+    z-index: -1;
 
   }
   .right-rectangle-bg {
-    background: url(../img/header-bg.jpg) no-repeat center center;
+    background: $blueColor3;
+    opacity: 0.8;
     border-radius: 0px 0px 0px 100px;
-    border-color: #000;
     position: absolute;
-    display: flex;
+    z-index: -2;
     top: 0px;
     right: 0px;
     min-width: 1100 / 1400 *100%;
