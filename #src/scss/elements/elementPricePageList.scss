@@ -39,6 +39,14 @@
           color: $textColor;
         }
       }
+      .pricepagelist__text:hover {
+        padding: 0 10px;
+        transition: all 200ms ease-in;
+
+        p {
+          font-weight: bold;
+        }
+      }
     }
   }
 }

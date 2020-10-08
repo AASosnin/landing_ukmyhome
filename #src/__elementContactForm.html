@@ -1,6 +1,7 @@
 
 <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 
+
 <div class="main-block">
     <div class="wrapper">
         <div class="content">
@@ -10,24 +11,31 @@
                 <div class="CssBoxForm">
                     <!-- <span class="title-form">Форма связи</span> -->
                     <form id="myForm">
-                        <div class="row">
+                        <!-- <div class="row">
                             <span>Имя*</span>
                             <input type="text" autocomplete="off" class="custom-input" name="fieldFio" required>
                             <div id="fieldFio-error" class="error"></div>
+                        </div> -->
+
+                        <div class="row">
+                            <span>Как к вам обращаться?*</span>
+                            <input type="text" autocomplete="off" class="custom-input" name="field_12" required>
+                            <div id="field_12-error" class="error"></div>
                         </div>
 
                         <div class="row">
                             <span>Телефон*</span>
-                            <!--Чтобы переопределить стандартные сообщения валидации, добавьте аттрибут title как показано ниже-->
-                            <input type="text" maxlength="11" pattern="[^]{9,11}" title="Укажите номер телефона" oninput="numberAndSpecSymbols(event);" autocomplete="off" class="custom-input" name="fieldTelephone" required>
+                            <!--Чтобы переопределить стандартные сообщения валидации, добавьте аттрибут title как показано ниже (Для тел pattern="[^]{9,11}" maxlength="11")-->
+                            <input type="text" maxlength="20" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Введите номер телефона без пробелов" oninput="numberAndSpecSymbols(event);" autocomplete="off" class="custom-input" name="fieldTelephone" placeholder="+79991001020" required>
                             <div id="fieldTelephone-error" class="error"></div>
                         </div>
 
                         <div class="row">
-                            <span>Email*</span>
-                            <input type="text" pattern="^([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\.[a-zA-Z]{2,6}$" autocomplete="off" title="Неправильный email. Пример: ivan@yandex.com" class="custom-input" name="fieldEmail" required>
+                            <span>Email</span>
+                            <input type="text" pattern="^([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\.[a-zA-Z]{2,6}$" autocomplete="off" title="Введите email полностью. Пример: info@mail.ru" class="custom-input" name="fieldEmail" placeholder="info@mail.ru">
                             <div id="fieldEmail-error" class="error"></div>
                         </div>
+
 
                         <!--Пример поля: текст/число-->
                         <!--<div class="row">

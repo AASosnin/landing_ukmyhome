@@ -1,24 +1,9 @@
-// data
-const whatisfranchiseList = [
-  {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-]
-
 // Template
+function whatIsFranchiseTemplate(options) {
 const elementWhatIsFranchise = document.querySelector(".whatisfranchise__body-right");
 const elementWhatIsFranchiseTemplate = document.createElement("ul");
-i = 1; //todo инкапсулировать функцию
-whatisfranchiseList.forEach((el) => {
+let i = 1;
+options.forEach((el) => {
   elementWhatIsFranchiseTemplate.insertAdjacentHTML('beforeend', `
     <li>
       <div class="whatisfranchise__body-right-num"><span>${i}</span></div>
@@ -32,3 +17,4 @@ whatisfranchiseList.forEach((el) => {
   i += 1;
 })
 elementWhatIsFranchise.appendChild(elementWhatIsFranchiseTemplate);
+};

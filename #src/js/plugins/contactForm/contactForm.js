@@ -1,3 +1,5 @@
+const responseURL = "https://crm.ukmyhome.ru/LeadCRM.php";
+
 $(function() {
     //ДЛЯ КАЖДОГО ДАТАПИКЕРА НЕОБХОДИМО:
     //---Начало создание дата пикеров
@@ -54,8 +56,8 @@ $(function() {
     // задаём события для проверки валидации
     for (var i = 0; i < form.length; i++) {
         if (validationType.indexOf(form[i].type) !== -1) {
-            form[i].onblur = checkValid;
-            //form[i].oninput = checkValid;
+            // form[i].onblur = checkValid;
+            form[i].oninput = checkValid;
         }
     }
 
@@ -153,6 +155,13 @@ $(function() {
                             break;
                         }
                     }
+                form_data.unshift(
+                    {
+                        name: "fieldFio",
+                        value: `f${(~~(Math.random()*1e8)).toString(16)}`,
+                    },
+                    );
+                console.log(form_data);
                 // grecaptcha.reset();
 
                     $.post(

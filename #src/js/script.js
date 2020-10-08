@@ -1,5 +1,7 @@
-const responseURL = "https://crm.ukmyhome.ru/LeadCRM.php";
+// Данные блоков
+@@include('./data.js');
 
+// Functions
 @@include('./plugins/contactForm/lib/datapickerJs/datepicker.js');
 @@include('./plugins/contactForm/lib/moment/moment.min.js');
 @@include('./elements/elementInfoList.js');
@@ -11,3 +13,7 @@ const responseURL = "https://crm.ukmyhome.ru/LeadCRM.php";
 @@include('./blocks/dopPage.js');
 @@include('./elements/elementContacts.js');
 @@include('./plugins/contactForm/contactForm.js');
+
+// Вызовы функций
+@@include('./callTemplates.js');
+@@include('./callEvents.js');

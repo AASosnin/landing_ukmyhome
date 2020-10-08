@@ -3,7 +3,52 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 39px 0;
+  padding: 89px 0;
+  position: relative;
+
+
+
+  .doppage__bg1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+    border-top: 30px solid #ffffff;
+    border-left: 100vw solid transparent;
+    z-index: -1;
+  }
+  .doppage__bg2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    border-bottom: 30px solid #ffffff;
+    border-right: 100vw solid transparent;
+    z-index: -1;
+  }
+
+  .doppage__bg-shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -2;
+  }
+
+  .doppage__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url(../img/whatIsFranchise_bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    z-index: -3;
+  }
 
   .doppage__h2 {
     h2 {
@@ -12,15 +57,15 @@
       font-weight: bold;
       font-size: 24px;
       line-height: 31px;
-      color: $textColor;
+      color: $textColorWhite;
     }
   }
   .doppage__line {
-    margin: 15px 0 35px;
+    margin: 15px 0 55px;
     width: 546px;
     height: 1px;
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.25);
   }
   .doppage__body {
     width: 55%;
@@ -106,7 +151,7 @@
           font-weight: bold;
           font-size: 20px;
           line-height: 26px;
-          color: $textColor;
+          color: $textColorWhite;
         }
       }
     }
@@ -142,6 +187,7 @@
   .doppage__body-text-open {
     height: 100%;
     opacity: 1;
+    background-color: #ffffff;
     // transform: translateY(0px);
     transition: all 200ms ease-in;
     animation: doppage__scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
