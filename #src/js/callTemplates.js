@@ -16,3 +16,5 @@ dopPageTemplate(dopPageList);
 
 // Контакты. Левый блок с контактами
 contactsTemplate(contactsList);
+
+const mod = myModal;

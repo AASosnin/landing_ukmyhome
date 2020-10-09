@@ -1,3 +1,9 @@
+const testModal = `
+  <p> Test Modal </p>
+`;
+// URL
+const responseURL = "https://crm.ukmyhome.ru/LeadCRM.php";
+
 // Как запустить УК с нуля лист
 const howToMakeUKList = [
   {
@@ -143,3 +149,6 @@ const contactsList = {
     "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
   ],
 };
+
+// HTML для созания формы (для загрузки в модалку)
+const formTemplate = createForm('-modal');

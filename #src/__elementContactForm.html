@@ -1,7 +1,6 @@
 
 <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 
-
 <div class="main-block">
     <div class="wrapper">
         <div class="content">
@@ -11,11 +10,6 @@
                 <div class="CssBoxForm">
                     <!-- <span class="title-form">Форма связи</span> -->
                     <form id="myForm">
-                        <!-- <div class="row">
-                            <span>Имя*</span>
-                            <input type="text" autocomplete="off" class="custom-input" name="fieldFio" required>
-                            <div id="fieldFio-error" class="error"></div>
-                        </div> -->
 
                         <div class="row">
                             <span>Как к вам обращаться?*</span>
@@ -25,8 +19,7 @@
 
                         <div class="row">
                             <span>Телефон*</span>
-                            <!--Чтобы переопределить стандартные сообщения валидации, добавьте аттрибут title как показано ниже (Для тел pattern="[^]{9,11}" maxlength="11")-->
-                            <input type="text" maxlength="20" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Введите номер телефона без пробелов" oninput="numberAndSpecSymbols(event);" autocomplete="off" class="custom-input" name="fieldTelephone" placeholder="+79991001020" required>
+                            <input type="text" maxlength="11" pattern="[^]{9,11}" title="Введите номер телефона без пробелов" oninput="numberAndSpecSymbols(event);" autocomplete="off" class="custom-input" name="fieldTelephone" placeholder="+79991001020" required>
                             <div id="fieldTelephone-error" class="error"></div>
                         </div>
 
@@ -35,70 +28,6 @@
                             <input type="text" pattern="^([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\.[a-zA-Z]{2,6}$" autocomplete="off" title="Введите email полностью. Пример: info@mail.ru" class="custom-input" name="fieldEmail" placeholder="info@mail.ru">
                             <div id="fieldEmail-error" class="error"></div>
                         </div>
-
-
-                        <!--Пример поля: текст/число-->
-                        <!--<div class="row">
-                            <span>Адрес</span>
-                            <input type="text" autocomplete="off" class="custom-input" name="field_6">
-                            <div id="field_6-error" class="error"></div>
-                        </div>-->
-
-                        <!--Пример поля: селектор-->
-                        <!--<div class="row">
-                            <span>Город</span>
-                            <select name="field_5" class="custom-select">
-                                <option value="1">Выберите город</option>
-                                <option value="2">Москва</option>
-                                <option value="3">Санкт-Петербург</option>
-                                <option value="4">Екатеринбург</option>
-                                <option value="5">Пермь</option>
-                                <option value="6">Тюмень</option>
-                            </select>
-                            <div id="field_5-error" class="error"></div>
-                        </div>-->
-
-                        <!--Пример поля: чебокс-->
-                        <!--<div class="row">
-                            <span class="row-title">Выберите пакет услуг</span>
-                            <div class="checkbox-list">
-                                <div class="checkbox-block">
-                                    <input id="field_12" type="checkbox" name="field_12">
-                                    <label for="field_12">Двери и окна</label>
-                                </div>
-
-                                <div class="checkbox-block">
-                                    <input id="field_13" type="checkbox" name="field_13">
-                                    <label for="field_13">Услуги</label>
-                                </div>
-                            </div>
-                        </div>-->
-
-                        <!--Пример поля: дата-->
-                        <!--Если дат будет несколько, тогда добавьте их в скрипте (см. ниже)-->
-                        <!--<div class="row">
-                            <span>Дата создания</span>
-                            <input type="text" autocomplete="off" class="custom-input" id="field_14" name="field_14">
-                            <div id="field_14-error" class="error"></div>
-                        </div>-->
-
-                        <!-- <div class="row">
-                            <span>Сообщение</span>
-                            <textarea autocomplete="off" class="custom-textarea" name="field_11"></textarea>
-                            <div id="field_11-error" class="error"></div>
-                        </div> -->
-
-                        <!--Блок "Я согласен с документами"-->
-                        <!--Если раскомментируете блок, тогда поменяйте в скрипте элемент isIAgree на false-->
-                        <!--<div class="row">
-                            <div class="checkbox-block">
-                                <input id="iAgree" type="checkbox" name="iAgree" onchange="setIAgree(event);">
-                                <label id="label-iAgree" for="iAgree">Я соглашаюсь с документами:</label>
-                            </div>
-                            <div class="link-block">
-                                <a href="/doc/Agreement.pdf" target="_blank">Согласие на обработку персональных данных</a>
-                            </div>
-                        </div>-->
 
                         <div class="error-block"></div>
 
@@ -133,3 +62,76 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+<!--Тест -->
+
+<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
+<!-- <div class="main-block${type}">
+    <div class="wrapper${type}">
+        <div class="content${type}">
+
+            <div class="CssGrid${type}">
+
+                <div class="CssBoxForm${type}"> -->
+
+                    <!-- <span class="title-form${type}">Форма связи</span> -->
+
+                    <!-- <form id="myForm${type}">
+
+                        <div class="row${type}">
+                            <span>Как к вам обращаться?*</span>
+                            <input type="text" autocomplete="off" class="custom-input${type}" name="field_12" required>
+                            <div id="field_12-error${type}" class="error${type}"></div>
+                        </div>
+
+                        <div class="row${type}">
+                            <span>Телефон*</span>
+                            <input type="text" maxlength="11" pattern="[^]{9,11}" title="Введите номер телефона без пробелов" oninput="numberAndSpecSymbols(event);" autocomplete="off" class="custom-input${type}" name="fieldTelephone" placeholder="+79991001020" required>
+                            <div id="fieldTelephone-error${type}" class="error${type}"></div>
+                        </div>
+
+                        <div class="row${type}">
+                            <span>Email</span>
+                            <input type="text" pattern="^([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\.[a-zA-Z]{2,6}$" autocomplete="off" title="Введите email полностью. Пример: info@mail.ru" class="custom-input${type}" name="fieldEmail" placeholder="info@mail.ru">
+                            <div id="fieldEmail-error${type}" class="error${type}"></div>
+                        </div>
+
+                        <div class="error-block${type}"></div>
+
+                        <button type="submit" class="submit-btn${type}" disabled id="sendForm${type}">Отправить</button>
+
+                        <div id="myPreloader${type}" class="preloader${type}">
+                            <div class="preloader${type}">
+                                <svg class="preloader__image${type}" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </form> -->
+
+                    <!--Установка ReCAPTCHA. Админ консоль - https://www.google.com/recaptcha/admin -->
+                    <!-- <div id="recaptcha${type}" class="g-recaptcha${type}" data-sitekey="6LcdZBEUAAAAAKNpDoNoA8f6Q-56_y2Cgx496sGl" data-callback="createLead" data-size="invisible"></div> -->
+
+                <!-- </div>
+
+                <div class="message-success${type}">
+                    <h1>Спасибо</h1>
+                    <p>Мы получили вашу заявку. Мы скоро свяжемся с вами.</p>
+                    <p>Пожалуйста, ожидайте.</p>
+                    <a href="" class="message-success-btn${type}">
+                        Отправить еще раз
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> -->

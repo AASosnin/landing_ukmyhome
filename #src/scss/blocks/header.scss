@@ -11,19 +11,19 @@ header {
      position: absolute;
      z-index: 0;
      top: 15px;
-     left: 0px;
+     left: -1px;
      min-width: 1350 / 1440 * 100%;
      height: 220px;
-     animation: header__left_go 0.5s ease-in 0s 1;
+    //  animation: header__left_go 0.5s ease-in 0s 1;
 
-     @keyframes header__left_go {
-       from {
-         transform: translateX(-100%);
-       }
-       to {
-         transform: translateX(0);
-       }
-     }
+    //  @keyframes header__left_go {
+    //    from {
+    //      transform: translateX(-100%);
+    //    }
+    //    to {
+    //      transform: translateX(0);
+    //    }
+    //  }
   }
   .left-rectangle {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
@@ -188,7 +188,10 @@ header {
 
   // }
   .right-rectangle-bg {
-    background: $greyColor;
+    // background: $greyColor;
+    background-image: url(../img/whatIsFranchise_bg1.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
     border-radius: 0px 0px 0px 100px;
     position: absolute;
     z-index: -2;

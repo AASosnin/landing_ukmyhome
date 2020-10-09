@@ -1,10 +1,10 @@
-.error-block {
+.error-block-modal {
   color: red;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.main-block {
+.main-block-modal {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -15,34 +15,34 @@
   color: #fff;
 }
 
-.wrapper {
+.wrapper-modal {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   // min-height: 100vh;
 }
 
-.CssBoxForm {
+.CssBoxForm-modal {
   display: flex;
   flex-direction: column;
   width: 320px;
   padding: 30px 40px 26px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.8);
   border: 1px solid #ffffff;
   border-radius: 5px;
 }
 
-.content {
+.content-modal {
   width: 100%;
   height: 100%;
 }
 
-.indent {
+.indent-modal {
   margin: 0px 10px 0px 10px;
   font-size: 12px;
 }
 
-.link_in {
+.link_in-modal {
   padding: 2px 6px;
   background: #ffffff3d;
   margin-left: 20px;
@@ -55,17 +55,17 @@ a:hover {
   text-decoration: underline;
 }
 
-.CssGrid {
+.CssGrid-modal {
   display: flex;
   width: 100%;
 }
 
-.copyrights {
+.copyrights-modal {
   font-size: 12px;
   margin-right: 30px;
 }
 
-.title-form {
+.title-form-modal {
   font-size: 40px;
   line-height: 40px;
   margin-bottom: 45px;
@@ -73,14 +73,14 @@ a:hover {
   text-align: center;
 }
 
-.row {
+.row-modal {
   margin-bottom: 6px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.submit-btn {
+.submit-btn-modal {
   color: white;
   border: 1px solid #ffffff3b;
   background: #ffffff26;
@@ -92,17 +92,17 @@ a:hover {
   font-family: $globalFont;
 }
 
-.submit-btn:hover {
+.submit-btn-modal:hover {
   border: 1px solid #fff;
   box-shadow: 0px 0px 5px #fff;
 }
 
-.submit-btn:active {
+.submit-btn-modal:active {
   box-shadow: none;
 
 }
 
-.message-success-btn {
+.message-success-btn-modal {
   color: white;
   border: 1px solid #ffffff3b;
   background: #ffffff26;
@@ -119,38 +119,57 @@ a:hover {
   font-family: $globalFont;
 }
 
-.message-success a:hover {
+.message-success-modal a:hover {
   text-decoration: none;
   background: #ffffff38;
 }
 
-.submit-btn:disabled {
+.submit-btn-modal:disabled {
   border: 1px solid rgba(156, 156, 156, 0.6);
   color: rgba(195, 195, 195, 0.4);
   // background: #909090;
 }
 
-.error {
+.error-modal {
   color: yellow;
   font-size: 13px;
   min-height: 17px;
 }
 
-.error-border {
+.error-border-modal {
   border: 1px solid yellow !important;
 }
 
-.message-success {
+.message-success-modal {
   display: none;
   flex-direction: column;
   width: 320px;
   padding: 30px 40px 26px;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, .8);
   border: 1px solid #ffffff;
   border-radius: 5px;
+
+  span {
+    font-family: $globalFont;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: $globalFont;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+    text-align: center;
+  }
 }
 
-.link-block {
+.link-block-modal {
   display: inline-block;
   flex-direction: column;
   flex-wrap: wrap;
@@ -159,47 +178,47 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.link-block a {
+.link-block-modal a {
   color: white;
   font-size: 12px;
   margin-bottom: 10px;
 }
 
-#label-iAgree {
+#label-iAgree-modal {
   margin-left: 10px;
 }
 
 @media (max-width: 680px) {
-  .main-block {
+  .main-block-modal {
       justify-content: flex-start
   }
 
-  .wrapper {
+  .wrapper-modal {
       width: 100%;
   }
 
-  .CssBoxForm {
+  .CssBoxForm-modal {
       width: 100%;
       padding: 10px 20px;
       background: transparent;
   }
 
-  .footer {
+  .footer-modal {
       flex-direction: column;
       padding: 10px 20px;
       font-size: 14px;
       background: rgba(255, 255, 255, 0);
   }
 
-  .footer a {
+  .footer-modal a {
       margin-top: 10px;
   }
 
-  .indent {
+  .indent-modal {
       display: none;
   }
 
-  .link_in {
+  .link_in-modal {
       padding: 6px 5px;
       background: #ffffff3d;
       border-radius: 2px;
@@ -209,35 +228,36 @@ a:hover {
       margin-left: 0px;
   }
 
-  .CssHeaderInfoBox {
+  .CssHeaderInfoBox-modal {
       display: flex;
       justify-content: space-between;
       padding: 0px 20px 25px 20px;
   }
 
-  .copyrights {
+  .copyrights-modal {
       text-align: left;
       margin-right: 0px;
   }
 
-  .CssBoxLogo {
+  .CssBoxLogo-modal {
       display: none;
   }
 
-  .CssBoxInfo {
+  .CssBoxInfo-modal {
       display: none;
   }
 
-  .message-success {
+  .message-success-modal {
       width: 100%;
       padding: 10px 20px;
-      background: transparent;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
   }
 }
 
-.custom-input,
-.custom-textarea,
-.custom-select {
+.custom-input-modal,
+.custom-textarea-modal,
+.custom-select-modal {
   height: 30px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -247,74 +267,74 @@ a:hover {
   margin-top: 3px;
   width: -webkit-fill-available;
 }
-.custom-input::placeholder,
-.custom-textarea::placeholder {
+.custom-input-modal::placeholder,
+.custom-textarea-modal::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-.custom-input:focus {
+.custom-input-modal:focus {
   border-color: #ffffff;
   outline: 0;
   background: #ffffff12;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 6px rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 1px 0px rgba(0,0,0,0.075), 0 0 6px rgba(255, 255, 255, 0.6);
 }
-.custom-textarea:focus {
+.custom-textarea-modal:focus {
   border-color: #ffffff;
   outline: 0;
   background: #ffffff12;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 6px rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 1px 0px rgba(0,0,0,0.075), 0 0 6px rgba(255, 255, 255, 0.6);
 }
-.custom-select {
+.custom-select-modal {
   cursor: pointer;
   height: 32px;
 }
 
-.custom-select option {
+.custom-select-modal option {
   color: black;
   background: white;
 }
 
-.custom-textarea {
+.custom-textarea-modal {
   resize: none;
   height: 100px;
 }
 
-.checkbox-list {
+.checkbox-list-modal {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 15px
 }
 
-.checkbox-block {
+.checkbox-block-modal {
   margin-right: 10px;
   display: flex;
 }
 
-.checkbox-block label{
+.checkbox-block-modal label{
   margin-left: 5px;
   margin-top: -2px;
   font-size: 15px;
   cursor: pointer;
 }
 
-.checkbox-block input[type="checkbox"] {
+.checkbox-block-modal input[type="checkbox"] {
    height: 16px;
    width: 16px;
    margin: 0;
    cursor: pointer;
 }
 
-.row-title {
+.row-title-modal {
   margin-bottom: 10px;
 }
 
 /*прелоудер*/
 
-#myPreloader {
+#myPreloader-modal {
   display: none;
 }
-.preloader {
+.preloader-modal {
 //  /* position: fixed;*/
   left: 0;
   top: 0;
@@ -326,7 +346,7 @@ a:hover {
   z-index: 1001;
 }
 
-.preloader__image {
+.preloader__image-modal {
   position: relative;
   top: 50%;
   left: 50%;
@@ -344,11 +364,11 @@ a:hover {
   }
 }
 
-.loaded_hiding .preloader {
+.loaded_hiding-modal .preloader-modal {
   transition: 0.3s opacity;
   opacity: 0;
 }
 
-.loaded .preloader {
+.loaded-modal .preloader-modal {
   display: none;
 }

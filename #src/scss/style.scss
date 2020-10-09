@@ -19,8 +19,9 @@
 @import "./elements/elementPricePageBlocks.scss";
 @import "./elements/elementContacts.scss";
 @import "./elements/elementContactForm.scss";
+@import "./elements/elementContactFormModal.scss";
 @import "../js/plugins/contactForm/lib/datapickerJs/css/datepicker.material.scss";
-
+@import "./plugins/modalWindow.scss";
 
 // Global
 body {

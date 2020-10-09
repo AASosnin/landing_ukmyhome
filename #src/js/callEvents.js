@@ -3,3 +3,6 @@ howToMakeUKEvents();
 
 // Открывающийся по кнопке текст. "Доп услуги"
 dopPageEvents();
+
+//
+$(formFunction());
