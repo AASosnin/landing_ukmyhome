@@ -5,7 +5,7 @@ function bodyCardTemplate(options) {
     const elementBodyCard = document.createElement("div");
     elementBodyCard.classList.add("bodycard");
     elementBodyCard.insertAdjacentHTML("beforeend", `
-      <div class="bodycard__header">
+      <div class="bodycard__header scrollAnimate34">
         <span>${el.header}</span>
       </div>
       <div class="bodycard__text">

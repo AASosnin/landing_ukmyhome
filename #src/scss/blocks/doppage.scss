@@ -92,6 +92,20 @@
         }
       }
 
+      // Анимация при скролле
+      .doppage__body-element-icon.scrollAnimate34 {
+        transform: translateX(200px) rotate(360deg);
+        opacity: 0;
+        transition: all 200ms ease-in;
+      }
+
+      .doppage__body-element-icon.scrollAnimate-active {
+        transform: translateX(0) rotate(0);
+        opacity: 1;
+        transition: all 200ms ease-in;
+
+      }
+
       .doppage__body-element-icon-hover {
         margin-bottom: 12px;
         width: 146px;

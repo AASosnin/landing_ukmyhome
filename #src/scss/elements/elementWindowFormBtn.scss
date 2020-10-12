@@ -1,0 +1,60 @@
+.window__form-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: rgba($color: #ffffff, $alpha: .9);
+  padding: 10px;
+  border-radius: 50%;
+  animation: window__form-btn 10s ease-in-out 3s infinite;
+  z-index: 100;
+
+
+    @keyframes window__form-btn {
+      0% {
+        transform: translateX(0) scale(1);
+      }
+      5% {
+        transform: translateX(-30px) scale(1.1);
+      }
+      10% {
+        transform: translateX(0) scale(1);
+      }
+      50% {
+        transform: translateX(0) scale(1);
+      }
+      55% {
+        transform: translateX(-30px) scale(1.1);
+      }
+      60% {
+        transform: translateX(0) scale(1);
+      }
+      100% {
+        transform: translateX(0) scale(1);
+      }
+    }
+
+  button {
+    cursor: pointer;
+    font-family: $globalFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: $textColorWhite;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba($color: $redColor, $alpha: .9);
+    transition: all 200ms ease-in;
+  }
+
+  button:hover {
+    background-color: $superRedColor;
+    transition: all 100ms ease-in;
+  }
+
+  button:active {
+    transform: scale(0.9);
+  }
+}

@@ -6,7 +6,7 @@ function dopPageTemplate(options) {
   options.forEach((el) => {
     dopPageBody.insertAdjacentHTML("beforeend", `
       <div class="doppage__body-elements">
-        <button class="doppage__body-element-icon" data-doppage-body-element-icon-num="${el.id}">
+        <button class="doppage__body-element-icon scrollAnimate34" data-doppage-body-element-icon-num="${el.id}">
           <img src="${el.icon}" alt="test">
         </button>
         <div class="doppage__body-element-text">

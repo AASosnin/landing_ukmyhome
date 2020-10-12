@@ -10,11 +10,11 @@
 @@include('./elements/elementBodyCard.js');
 @@include('./blocks/whatIsFranchise.js');
 @@include('./elements/elementPricePageList.js');
-@@include('./blocks/pricePage.js');
 @@include('./elements/elementPricePageBlocks.js');
 @@include('./blocks/dopPage.js');
 @@include('./elements/elementContacts.js');
 @@include('./plugins/contactForm/contactForm.js');
+@@include('./elements/elementWindowFormBtn.js');
 
 // Создание объектов
 @@include('./callTemplates.js');
@@ -24,3 +24,5 @@
 
 // Подключение кнопок
 @@include('./buttons.js');
+
+@@include('./plugins/scrollAnimate/scrollAnimate.js');

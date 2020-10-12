@@ -5,7 +5,7 @@ function pricePageListTemplate(options) {
   let i = 1;
   options.forEach((el) => {
     elementPricePageListTemplate.insertAdjacentHTML('beforeend', `
-      <li>
+      <li class="scrollAnimate">
         <div class="pricepagelist__num"><span>${i}</span></div>
         <div class="pricepagelist__text">
           <p>

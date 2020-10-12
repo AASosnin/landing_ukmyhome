@@ -13,16 +13,27 @@
     background-image: url(../img/howtostartuk_bg2.jpg);
     background-size: 100% 100%;
     overflow: hidden;
-    animation: startuk_bg_scale 0.8s ease-in 0s 1;
 
-     @keyframes startuk_bg_scale {
-       from {
-         transform: scaleX(0.5);
-       }
-       to {
-         transform: scaleX(1);
-       }
-     }
+    // animation: startuk_bg_scale 0.8s ease-in 0s 1;
+
+    //  @keyframes startuk_bg_scale {
+    //    from {
+    //      transform: scaleX(0.5);
+    //    }
+    //    to {
+    //      transform: scaleX(1);
+    //    }
+    //  }
+  }
+
+  .startuk__bg-img.scrollAnimate34 {
+    transform: scaleX(0.4);
+    transition: all 800ms ease-in;
+  }
+
+  .startuk__bg-img.scrollAnimate-active {
+    transform: scaleX(1);
+    transition: all 1000ms ease-in;
   }
 
   .startuk__bg-blue {

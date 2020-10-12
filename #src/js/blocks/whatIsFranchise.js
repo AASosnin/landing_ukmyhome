@@ -5,7 +5,7 @@ const elementWhatIsFranchiseTemplate = document.createElement("ul");
 let i = 1;
 options.forEach((el) => {
   elementWhatIsFranchiseTemplate.insertAdjacentHTML('beforeend', `
-    <li>
+    <li class="scrollAnimate">
       <div class="whatisfranchise__body-right-num"><span>${i}</span></div>
       <div class="whatisfranchise__body-right-text">
         <p>

@@ -152,11 +152,15 @@
         ul {
           display: flex;
           flex-direction: column;
+
           li {
             display: flex;
             align-items: center;
             justify-content: space-around;
             margin: 0 0 10px;
+            transform: translateX(400px);
+            opacity: 0;
+            transition: all 300ms ease-in 100ms;
 
             .whatisfranchise__body-right-num {
               display: flex;
@@ -204,6 +208,12 @@
                 font-weight: bold;
               }
             }
+          }
+
+          li.scrollAnimate-active {
+            transform: translateX(0);
+            opacity: 1;
+            transition: all 300ms ease-in 100ms;
           }
         }
       }

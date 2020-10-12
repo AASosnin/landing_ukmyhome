@@ -48,5 +48,17 @@
         }
       }
     }
+
+    li.scrollAnimate {
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 200ms ease-in;
+    }
+
+    li.scrollAnimate-active {
+      transform: translateY(0px);
+      opacity: 1;
+      transition: all 200ms ease-in;
+    }
   }
 }

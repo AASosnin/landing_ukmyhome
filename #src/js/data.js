@@ -1,6 +1,3 @@
-const testModal = `
-  <p> Test Modal </p>
-`;
 // URL
 const responseURL = "https://crm.ukmyhome.ru/LeadCRM.php";
 

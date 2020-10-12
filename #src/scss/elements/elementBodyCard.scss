@@ -35,6 +35,20 @@
         color: #FFFFFF;
       }
     }
+
+    .bodycard__header.scrollAnimate-active {
+      animation: bodycard__header-scale 800ms ease-in 200ms 1;
+
+      @keyframes bodycard__header-scale {
+        0% {
+          transform: rotateX(0);
+        }
+        100% {
+          transform: rotateX(360deg);
+        }
+      }
+    }
+
     .bodycard__text {
       p {
         font-family: $globalFont;
