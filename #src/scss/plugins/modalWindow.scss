@@ -35,3 +35,9 @@
   transform: translateY(0);
   transition: all 200ms ease-in 300ms;
 }
+
+@media (max-width: 699px) {
+  .my-modalwindow {
+    background-color: #000000;
+  }
+}

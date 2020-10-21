@@ -112,7 +112,7 @@ const pricePageBlocksList = [
   },
 ];
 
-// Доболнительные продукты
+// Дополнительные продукты
 const dopPageList = [
   {
     id: 1,

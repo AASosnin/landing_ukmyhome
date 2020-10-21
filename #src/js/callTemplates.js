@@ -1,3 +1,6 @@
+// Кнопка в правом нижнем углу экрана
+// createWindowFormBtn('Заказать звонок');
+
 // Как запустить УК. Открывающийся список
 howToMakeUKTemplate(howToMakeUKList);
 
@@ -16,8 +19,5 @@ dopPageTemplate(dopPageList);
 
 // Контакты. Левый блок с контактами
 contactsTemplate(contactsList);
-
-// Кнопка в правом нижнем углу экрана
-createWindowFormBtn('Заказать звонок');
 
 // const mod = myModal;

@@ -5,7 +5,7 @@
   background-color: rgba($color: #ffffff, $alpha: .9);
   padding: 10px;
   border-radius: 50%;
-  animation: window__form-btn 10s ease-in-out 3s infinite;
+  animation: window__form-btn 7s ease-in-out 3s infinite;
   z-index: 100;
 
 
@@ -13,19 +13,10 @@
       0% {
         transform: translateX(0) scale(1);
       }
-      5% {
+      7% {
         transform: translateX(-30px) scale(1.1);
       }
-      10% {
-        transform: translateX(0) scale(1);
-      }
-      50% {
-        transform: translateX(0) scale(1);
-      }
-      55% {
-        transform: translateX(-30px) scale(1.1);
-      }
-      60% {
+      14% {
         transform: translateX(0) scale(1);
       }
       100% {
@@ -35,18 +26,22 @@
 
   button {
     cursor: pointer;
-    font-family: $globalFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    text-align: center;
-    color: $textColorWhite;
     padding: 10px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: rgba($color: $redColor, $alpha: .9);
     transition: all 200ms ease-in;
+
+    span {
+      cursor: pointer;
+      font-family: $globalFont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      text-align: center;
+      color: $textColorWhite;
+    }
   }
 
   button:hover {
@@ -56,5 +51,49 @@
 
   button:active {
     transform: scale(0.9);
+  }
+}
+
+@media (max-width: 699px) {
+  .window__form-btn {
+    right: 8px;
+    bottom: unset;
+    top: 50%;
+    background-color: #ffffff;
+    border: 2px solid red;
+    animation: window__form-btn-v 5s ease-in-out 3s infinite;
+
+    @keyframes window__form-btn-v {
+      0% {
+        background-color: rgba($color: #ffffff, $alpha: .9);
+        transform: translateY(0) translateX(0) scale(1);
+      }
+      7% {
+        background-color: #ffffff;
+        transform: translateY(-20px) translateX(-10px) scale(1.1);
+      }
+      14% {
+        background-color: rgba($color: #ffffff, $alpha: .9);
+        transform: translateY(0) translateX(0) scale(1);
+      }
+      100% {
+        background-color: rgba($color: #ffffff, $alpha: .9);
+        transform: translateY(0) translateX(0) scale(1);
+      }
+    }
+  }
+
+  .window__form-btn button {
+    width: 30px;
+    height: 30px;
+    background: url(../img/favicon.svg) center center no-repeat;
+  }
+
+  .window__form-btn button:hover {
+    background-color: unset;
+  }
+
+  .window__form-btn button span{
+    display: none;
   }
 }

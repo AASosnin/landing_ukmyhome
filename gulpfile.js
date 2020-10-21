@@ -36,6 +36,7 @@ const path = {
     js: project_folder + "/js/",
     img: project_folder + "/img/",
     fonts: project_folder + "/fonts/",
+    ico: project_folder + "/",
   },
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
@@ -43,6 +44,7 @@ const path = {
     js: source_folder + "/js/script.js",
     img: source_folder + "/img/**/*.{jpg,svg,png,gif,ico,webp}",
     fonts: source_folder + "/fonts/*.ttf",
+    ico: source_folder + "/*.ico",
   },
   watch: {
     html: source_folder + "/**/*.html",
@@ -71,6 +73,11 @@ function html() {
   .pipe(webphtml()) //Берет из функции image webp и подставляет их вместо стандартных img в html
   .pipe(dest(path.build.html)) //собирает проект
   .pipe(browsersync.stream()) //синхронизирует проект с локалхостом
+}
+
+function ico() {
+  return src(path.src.ico)
+  .pipe(dest(path.build.ico))
 }
 
 // функция для сборки css
@@ -192,7 +199,7 @@ function clean(params) {
   return del(path.clean)
 }
 
-const build = gulp.series(clean, gulp.parallel(js, css, html, images)); //сборка проекта
+const build = gulp.series(clean, gulp.parallel(js, css, html, images, ico)); //сборка проекта
 const watch = gulp.parallel(build, watchFiles, browserSync); //запуск собранного проекта в режиме dev
 
 exports.fonts = fonts;
@@ -200,6 +207,7 @@ exports.images = images;
 exports.js = js;
 exports.css = css;
 exports.html = html;
+exports.ico = ico;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;

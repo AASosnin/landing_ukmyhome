@@ -14,7 +14,6 @@
 @@include('./blocks/dopPage.js');
 @@include('./elements/elementContacts.js');
 @@include('./plugins/contactForm/contactForm.js');
-@@include('./elements/elementWindowFormBtn.js');
 
 // Создание объектов
 @@include('./callTemplates.js');

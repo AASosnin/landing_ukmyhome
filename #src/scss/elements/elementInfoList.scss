@@ -30,6 +30,7 @@
           align-items: center;
           opacity: 1;
           margin: 0 22px 0 0;
+          flex-shrink: 0;
 
           span {
             font-family: $globalFont;
@@ -51,12 +52,13 @@
           line-height: 23px;
           color: $textColor;
           margin: 0 22px 0 0;
-        }
+         }
 
         .element-info-list__info-btn-wrapper {
           height: 1px;
           background-color: $blueColor3;
           flex-grow: 1;
+          min-width: 72px;
           position: relative;
 
           // Кнопка открытия info
@@ -76,7 +78,6 @@
             // Стрелка для кнопки
 
             .arrow-2 {
-              // border: 1px solid #000;
               cursor: pointer;
               height: 15px;
               width: 0px;
@@ -219,6 +220,54 @@
         display: none;
       }
     }
+  }
+}
+
+@media (max-width: 799px) {
+  .element-info-list ul li .element-info-list__li .element-info-list__li-wrapp .element-info-list__text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 599px) {
+  .element-info-list ul li .element-info-list__li .element-info-list__li-wrapp .element-info-list__text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 499px) {
+
+  .element-info-list ul li {
+    border: 1px solid $blueColor3;
+    border-radius: 5px;
+    margin: 2px 0;
+    padding: 5px;
+  }
+
+  .element-info-list ul li .element-info-list__li .element-info-list__li-wrapp .element-info-list__text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .element-info-list ul li .element-info-list__li .element-info-list__li-wrapp .element-info-list__num {
+    width: 40px;
+    height: 40px;
+  }
+
+  .element-info-list ul li .element-info-list__li .element-info-list__li-wrapp .element-info-list__num span {
+    font-size: 18px;
+  }
+
+  .element-info-list ul li .element-info-list__li .element-info-list__li-wrapp .element-info-list__info-btn-wrapper {
+    flex-grow: 1;
+    min-width: 32px;
+    position: relative;
+    background-color: inherit;
+  }
+
+  .element-info-list ul li .element-info-list__li .element-info-list__li-wrapp .element-info-list__info-btn-wrapper .element-info-list__info-btn {
+    right: 0px;
   }
 }
 

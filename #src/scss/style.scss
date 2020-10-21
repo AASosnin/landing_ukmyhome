@@ -1,7 +1,8 @@
-// Подключаемые общие стили
+// Global
 @import "./global/nullstyle.scss";
 @import "./global/fonts.scss";
 @import "./global/colors.scss";
+@import "./global/mediagets.scss";
 
 // Блоки
 @import "./blocks/header.scss";
@@ -24,11 +25,11 @@
 @import "./plugins/modalWindow.scss";
 @import "./elements/elementWindowFormBtn.scss";
 
-// Global
+// Global styles
 body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, p, span {
+h1, h2, h3, h4, h5, h6, p, span {
   cursor: default;
 }

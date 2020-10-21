@@ -6,6 +6,5 @@ const pricePageBtn = document.querySelector('.pricepage__btn button');
 showModalForm(pricePageBtn, formTemplate);
 
 // Кнопка "Получить консультацию" fixed
-const windowFormBtn = document.querySelector(".window__form-btn");
+const windowFormBtn = document.querySelector('.window__form-btn');
 showModalForm(windowFormBtn, formTemplate);
-

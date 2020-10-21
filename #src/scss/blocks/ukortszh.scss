@@ -115,3 +115,24 @@
     }
   }
 }
+
+@media (max-width: 1051px) {
+  .ukortszh .ukortszh__wrap {
+    width: 95%;
+  }
+}
+
+@media (max-width: 799px) {
+  .ukortszh .ukortszh__wrap .ukortszh__h2 h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .ukortszh .ukortszh__wrap .ukortszh__line {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .ukortszh .ukortszh__wrap .ukortszh__footer {
+    margin-top: 16px;
+  }
+}

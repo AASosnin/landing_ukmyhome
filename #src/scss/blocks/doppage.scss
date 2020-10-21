@@ -72,12 +72,13 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 19px;
+    // flex-wrap: wrap;
 
     .doppage__body-elements {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0 10px;
+      margin: 0 2px;
 
       .doppage__body-element-icon {
         margin-bottom: 12px;
@@ -226,3 +227,87 @@
     display: none;
   }
 }
+
+@media (max-width: 1365px) {
+  .doppage .doppage__body {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1051px) {
+   .doppage .doppage__body  .doppage__body-elements .doppage__body-element-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .doppage .doppage__body  .doppage__body-elements .doppage__body-element-icon img {
+    height: 65px;
+  }
+}
+
+@media (max-width: 699px) {
+  .doppage .doppage__body  .doppage__body-elements {
+    flex-basis: 33%;
+    flex-shrink: 0;
+  }
+
+  .doppage .doppage__bg {
+    background-size: 100% 100%;
+    background-attachment: unset;
+  }
+
+  .doppage .doppage__h2 h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .doppage .doppage__line {
+    max-width: 80%;
+  }
+
+  .doppage .doppage__body {
+    width: 90%;
+  }
+}
+
+@media (max-width: 499px) {
+  .doppage .doppage__body  .doppage__body-elements {
+    flex-basis: 33%;
+    flex-shrink: 0;
+  }
+
+  .doppage .doppage__body  .doppage__body-elements .doppage__body-element-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .doppage .doppage__body  .doppage__body-elements .doppage__body-element-icon img {
+    height: 55px;
+  }
+
+  .doppage .doppage__body  .doppage__body-elements .doppage__body-element-text span {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 399px) {
+  .doppage .doppage__body {
+    flex-wrap: nowrap;
+  }
+
+  .doppage .doppage__body  .doppage__body-elements .doppage__body-element-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .doppage .doppage__body  .doppage__body-elements .doppage__body-element-icon img {
+    height: 55px;
+  }
+
+  .doppage .doppage__body  .doppage__body-elements .doppage__body-element-text span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+

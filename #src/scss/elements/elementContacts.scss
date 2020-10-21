@@ -47,3 +47,13 @@
     }
   }
 }
+
+@media (max-width: 699px) {
+  .contacts .contacts__texts {
+    display: none;
+  }
+
+  .contacts .contacts__phones .contacts__phone span {
+    font-size: 20px;
+  }
+}

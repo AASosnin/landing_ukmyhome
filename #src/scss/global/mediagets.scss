@@ -1,0 +1,8 @@
+@mixin display-size($size) {
+  @if $size == size1366 {
+    @media (max-width: 1365px) { @content; }
+  }
+  @else if $size == size1052 {
+    @media (max-width: 1051px) { @content; }
+  }
+}
