@@ -79,6 +79,8 @@
       flex-direction: column;
       align-items: center;
       margin: 0 2px;
+      max-width: 100vw;
+      overflow: hidden;
 
       .doppage__body-element-icon {
         margin-bottom: 12px;
@@ -274,6 +276,8 @@
   .doppage .doppage__body  .doppage__body-elements {
     flex-basis: 33%;
     flex-shrink: 0;
+    max-width: 100vw;
+    overflow: hidden;
   }
 
   .doppage .doppage__body  .doppage__body-elements .doppage__body-element-icon {

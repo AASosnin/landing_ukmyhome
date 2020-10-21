@@ -152,6 +152,8 @@
         ul {
           display: flex;
           flex-direction: column;
+          max-width: 100vw;
+          overflow: hidden;
 
           li {
             display: flex;
@@ -315,6 +317,11 @@
 
   .whatisfranchise .whatisfranchise__wrap .whatisfranchise__body .whatisfranchise__body-right {
     width: 100%;
+  }
+
+  .whatisfranchise .whatisfranchise__wrap .whatisfranchise__body .whatisfranchise__body-right ul {
+    max-width: 100vw;
+    overflow: hidden;
   }
 }
 

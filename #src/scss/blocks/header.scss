@@ -100,12 +100,6 @@ header {
             .send-form-btn {
               position: relative;
               display: block;
-              color: $superRedColor;
-              font-family: $globalFont;
-              font-style: normal;
-              font-weight: bold;
-              font-size: 24px;
-              line-height: 31px;
               width: 290px;
               height: 60px;
               background: #FFFFFF;
@@ -113,6 +107,15 @@ header {
               border-radius: 30px;
               overflow: hidden;
               transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+
+              span {
+                color: $superRedColor;
+                font-family: $globalFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 31px;
+              }
             }
 
             .send-form-btn:hover {
@@ -366,48 +369,15 @@ header {
 
         .header-info__text {
 
-          .header-info__text1 {
-            h1 {
-
-              span {
-
-              }
-            }
-          }
-
-          .line {
-
-          }
-
           .header-info__text2 {
-
-            .header-info__text2__text {
-
-              span {
-
-              }
-            }
 
             .header-info__btn {
               .send-form-btn {
                 height: 40px;
                 width: 200px;
-                font-size: 20px;
-              }
-
-              .send-form-btn:hover {
-
-              }
-
-              .send-form-btn:hover:before {
-
-              }
-
-              .send-form-btn:before {
-
-              }
-              .send-form-btn:active {
-
+                span {
+                  font-size: 20px;
+                }
               }
             }
           }
@@ -481,6 +451,7 @@ header {
           }
 
           .header-info__text2 {
+            flex-direction: column;
 
             .header-info__text2__text {
               font-size: 14px;
@@ -492,11 +463,46 @@ header {
             }
 
             .header-info__btn {
-              display: none;
+              position: absolute;
+              right: 10px;
+              bottom: 10px;
+              background-color: #ffffff;
+              border-radius: 50%;
+              animation: header__heartbeat 1.5s ease-in-out infinite both;
+
+              @keyframes header__heartbeat {
+                from {
+                  transform: scale(1);
+                  transform-origin: center center;
+                  animation-timing-function: ease-out;
+                }
+                10% {
+                  transform: scale(0.91);
+                  animation-timing-function: ease-in;
+                }
+                17% {
+                  transform: scale(0.98);
+                  animation-timing-function: ease-out;
+                }
+                33% {
+                  transform: scale(0.87);
+                  animation-timing-function: ease-in;
+                }
+                45% {
+                  transform: scale(1);
+                  animation-timing-function: ease-out;
+                }
+              }
+
               .send-form-btn {
-                height: 30px;
-                width: 150px;
+                height: 40px;
+                width: 40px;
                 font-size: 20px;
+                background: url(../img/favicon.svg) center center no-repeat;
+
+                span {
+                  display: none;
+                }
               }
 
               .send-form-btn:hover {
