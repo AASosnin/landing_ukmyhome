@@ -5,8 +5,8 @@ function contactsTemplate(options) {
   elementContactsPhones.classList.add("contacts__phones");
   const elementContactsDot = document.createElement("div");
   elementContactsDot.classList.add("contacts__dot");
-  const elementContactsTexts = document.createElement("div");
-  elementContactsTexts.classList.add("contacts__texts");
+  const elementContactsText = document.createElement("div");
+  elementContactsText.classList.add("contacts__text");
 
   options.phones.forEach((phone) => {
     elementContactsPhones.insertAdjacentHTML("beforeend", `
@@ -16,15 +16,11 @@ function contactsTemplate(options) {
     `)
   });
 
-  options.texts.forEach((text) => {
-    elementContactsTexts.insertAdjacentHTML("beforeend", `
-      <div class="contacts__text">
-        <p>${text}</p>
-      </div>
-    `)
-  });
+
+  elementContactsText.insertAdjacentHTML("beforeend", options.text);
+
 
   elementContacts.appendChild(elementContactsPhones);
   elementContacts.appendChild(elementContactsDot);
-  elementContacts.appendChild(elementContactsTexts);
+  elementContacts.appendChild(elementContactsText);
 };

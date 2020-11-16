@@ -4,56 +4,86 @@ const responseURL = "https://crm.ukmyhome.ru/LeadCRM.php";
 // Как запустить УК с нуля лист
 const howToMakeUKList = [
   {
-    header: "Зарегистрировать организацию",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+    header: "Регистрация организации",
+    text: `
+      <p>Новая организация должна соответствовать всем требованиям законодательства.</p>
+      <p>Ошибка при регистрации названия организации или регистрация юридического адреса вне допустимой зоны приведет к отказу в выдаче лицензии на ведение деятельности.</p>
+      <p>Чтобы повторно подать заявку на лицензию, придется вносить изменения в ЕГРЮЛ и заново оплачивать государственную пошлину (минимум 30 000 руб.). На все эти изменения как правило уходит 1,5-2 месяца.</p>
+    `
   },
   {
-    header: "Получить лицензию на ведение деятельности УК",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+    header: "Подготовка директора",
+    text: `
+      <p>Потенциальному директору необходимо пройти квалификационный экзамен (Подать заявку в ГЖИ, дождаться ее одобрения в течении 15 дней, дать минимум 86 правильных ответов из 100 вопросов за 2 часа) и через 5 дней в случае успешной сдачи экзамена получить квалификационный аттестат сроком действия на 5 лет. После этого можно претендовать на получение лицензии.</p>
+      <p>Рекомендуем пройти этот экзамен одному из заместителей директора. Если по каким-либо причинам лицензию директора анулируют, временно обязанности директора сможет исполнять сотрудник, имеющий квалификационный аттестат.</p>
+    `
   },
   {
-    header: "Набрать штат сотрудников",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+    header: "Штат сотрудников и подрядные организации",
+    text: `
+      <p>Набрать необходимый для деятельности управляющей компании штат сотрудников, выполняющих различные виды ремонтных и обслуживающих работ.</p>
+      <p>Если для определенного вида работ штатного сотрудника нет, то необходим договор с подрядной организацией, обязующейся взять на себя необходимый объем работ.</p>
+    `
+  },
+
+  {
+    header: "Программное обеспечение, обучение персонала",
+    text: `
+      <p>В работе управляющей комапнии очень важно вести строгую отчетность даже по самым незначительным работам. Для этого необходимо обучить каждого сотрудника вести правильную отчетность в его зоне ответственности.</p>
+      <p>Бухгалтерскую отчетность можно вести при помощи стандартных средств ведения бухгалтерского учета, но лучше использовать специализированной программное обеспечение на базе 1С для отчетности по ЖКХ.</p>
+    `
   },
   {
-    header: "Сдать квалификационный экзамен директору организации",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+    header: "Сайт управляющей компании",
+    text: `
+      <p>С 2010 года согласно Постановлению Правительства РФ №731 от 23.09.2010 года о Стандарте раскрытия информации, управляющая компания должна иметь официальный сайт. На сайте должна быть отражена информация как минимум по 14 пунктам, указанным в постановлении.</p>
+      <p>Желаемыми требованиями для сайта современной управляющей компании являются наличие возможности онлайн оплаты услуг ЖКХ, раздел новостей, отражающий результаты работы компании и "маркетинговая страница" для развития управляющей компании и привлечения новых домов на обслуживнаие.</p>
+    `
   },
   {
-    header: "Установить программное обеспечение, провести обучение персонала",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+    header: "Лицензия управляющей компании",
+    text:`
+      <p>Для получения лицензии необходимо собрать пакет документов, подготовить заявление в ГЖИ и оплатить госпошлину в размере 30 000 руб.</p>
+      <p>Обратиться в региональное отделение ГЖИ, которое в течении 30 дней рассмотрит заявление и в случае положительного ответа выдаст лицензию на ведение деятельности.</p>
+    `
   },
   {
-    header: "Запустить сайт новой УК",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+    header: "Прием домов на обслуживание",
+    text: `
+      <p>После получения лицензии в течении полугода (а желательно раньше) принять дом(а) на обслуживание. Для этого нужно собрать пакет документов, провести собрания жильцов в установленной форме и подать сведения в ГЖИ.</p>
+      <p>Если компания в течении полугода не принимает на обслуживание ни одного дома, то лицензия с высокой вероятностью будет отозвана.</p>
+    `
   },
   {
-    header: "Собрать пакет документов для приема домов на обслуживание",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
-  },
-  {
-    header: "Организовать сбор денег и предоставление отчетности",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
-  },
-  {
-    header: "“Далее список на обсуждение”",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+    header: "Сбор денег и предоставление отчетности",
+    text: `
+      <p>Для ведения деятельности необходимо организовать процедуру сбора денег с жильцов. Желательно использовать несколько вариантов, чтобы для каждой категории жильцов процесс оплаты не вызывал затруднений.</p>
+      <p>Отчетность нужно вести как для проверяющих органов так и для самих жильцов. Чем больше информации хранится в открытом доступе на сайте упраляющей компании, тем больше доверия вызывает управляющая компания.</p>
+    `
   },
 ];
 
-// Что такое франшиза, список
+// Почему франшиза УК / ТСЖ, список
 const whatIsFranchiseList = [
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    text: `
+      <p>Всего четыре шага отделяют Вас от своей Управляющей компании или ТСЖ. Первый шаг. Оставляете заявку на сайте, чтобы наш специалист смог с вами связаться и подобрать индивидуальный план открытия нового бизнеса.</p>
+    `
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    text: `
+      <p>Второй шаг. Вносите оплату и мы запускаем процессы всех согласований, открытия фирмы, получения требуемых лицензий.</p>
+    `
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    text: `
+      <p>Третий шаг. На этом этапе наша цель - выстроить бизнес-процессы внутри компании. Набрать команду, провести обучение персонала, запустить соврменную бухгалтерию, оформить сайт и провести его интеграцию с бухгалтерией, установить все необходимое программное обеспечение и многое другое.</p>
+    `
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    text: `
+      <p>Поздравляем! Ваша компания готова. Четвертый шаг. Знакомим вас со всеми процессами и даем рекомендации как правильно начать вести деятельность. Если в дальнейшем вы захотите воспользоваться нашими дополнительными услугами, всегда вам рады.</p>
+    `
   },
 ];
 
@@ -61,42 +91,65 @@ const whatIsFranchiseList = [
 const bodyCardList = [
   {
     header: "Управляющая компания",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ea! Id perspiciatis, accusamus hic unde ipsum quis perferendis consequuntur voluptas repellendus odio sapiente culpa dolore aliquid qui ea beatae quas!</br>
-    </br>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ea! Id perspiciatis, accusamus hic unde ipsum quis perferendis consequuntur voluptas repellendus odio sapiente culpa dolore aliquid qui ea beatae quas!`,
+    text: `
+      УК (управляющая компания) – сторонняя организация, отвечающая за ведение хозяйственной деятельности, сотрудничающая с поставщиками услуг.</br>
+      </br>
+      УК может обслуживать десятки домов в разных кварталах.</br>
+      </br>
+      В УК решением вопросов занимается председатель и его совет.</br>
+      </br>
+      В УК работают профессионалы своего дела с обученным персоналом и материально-технической базой.</br>
+      </br>
+      УК будет выбирать оптимальные варианты исходя из простоты, скорости и качества обслуживания, что часто приводит к более выскоим коммунальным платежам.</br>
+      </br>
+      При заключение договора с УК, клиенты УК не обязаны принимать участие в процессах управления и обслуживания домов.</br>
+      </br>
+    `,
   },
   {
     header: "Товарищеское сотружество жильцов",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ea! Id perspiciatis, accusamus hic unde ipsum quis perferendis consequuntur voluptas repellendus odio sapiente culpa dolore aliquid qui ea beatae quas!</br>
-    </br>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ea! Id perspiciatis, accusamus hic unde ipsum quis perferendis consequuntur voluptas repellendus odio sapiente culpa dolore aliquid qui ea beatae quas!</br>
-    </br>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ea! Id perspiciatis, accusamus hic unde ipsum quis perferendis consequuntur voluptas repellendus odio sapiente culpa dolore aliquid qui ea beatae quas!`,
+    text: `
+      ТСЖ (Товарищество собственников жилья) – это некоммерческое сообщество, в которое входят люди, проживающие в доме или соседних домах, желающие совместно вести хозяйственную деятельность.</br>
+      </br>
+      ТСЖ управляет несколькими домами, есть ограничение по количеству квартир.</br>
+      </br>
+      В ТСЖ все решения принимаются на совете жильцов. Для каждого решения требуется присутствие более 50% собственников квартир.</br>
+      </br>
+      В ТСЖ нет своей технической базы, инструментов, и обычно – навыков ведения ремонта.</br>
+      </br>
+      ТСЖ позволяет собственникам жилья самим решать какие траты и в какой период производить на обслуживание домов.</br>
+      </br>
+      ТСЖ требует внимания, времени и постоянного участия во всех процессах жителей дома.</br>
+      </br>
+    `,
   },
 ];
 
 // Сколько стоит франшиза. Список
 const pricePageListList = [
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    text: "Регистрация ООО по всем стандартам УК",
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    text: "Подготовка к квалификационному экзамену",
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    text: "Координция процесса получения лицензии",
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    text: "Лицензированное программное обеспечение",
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    text: "Готовый сайт организации",
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    text: "Рекомендации в подборе и обученние персонала",
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    text: "Отлаженные внутренние и внешние бизес-процессы",
+  },
+  {
+    text: "Полностью готовая к работе УК/ТСЖ",
   },
 ];
 
@@ -118,19 +171,30 @@ const dopPageList = [
     id: 1,
     icon: "./img/doppage_jurist.svg",
     header: "Юриспруденция",
-    text: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, dolorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, dolorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, dolorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, dolorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, dolorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, dolorem.",
+    text: `
+      <p>Юридическая помощь квалифицированного специалиста по всем вопросам, касающимся деятельности управляющей компании или товарищества собственников жилья.</p>
+      <p>Подготовка документов для заведения новых домов в лицензию УК. Подготовка любых договоров в сфере ЖКХ, начиная от услуг поставщиков и подрядчиков, и заканчивая договором между ТСЖ и УК.</p>
+    `,
   },
   {
     id: 2,
     icon: "./img/doppage_buhgalter.svg",
     header: "Бухгалтерия",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, dolorem.",
+    text: `
+      <p>Передача бухгалтерской отчетности является одной из самых востребованных услуг в сфере аутсорсинга среди малого и среднего бизнеса.</p>
+      <p>С помощью бухгалтерского аутсорсинга вы получите возможность избежать создания собственной бухгалтерии, при этом сможете выставлять счета контрагентам, направлять акты и накладные, сдвавать всю необходимую отчетность.</p>
+      <p>По статистике "удаленная" бухгалтерия сокращает издержки в среднем в 2-3 раза.</p>
+    `,
   },
   {
     id: 3,
     icon: "./img/doppage_marketing.svg",
     header: "Маркетинг",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, dolorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    text: `
+      <p>Маркетинг - это развитие. От того, как выполняется ваша маркетинговая стратегия, зависят продажи и выручка компании.</p>
+      <p>Когда компания сталкивается с необходимостью использования специализированных решений и сервисов для маркетинговых целей, первое желание – создать собственное или приобрести готовое коробочное с последующей интеграцией. Однако, если посчитать стоимость разработки, и, особенно, поддержки (а это, как минимум, два сотрудника в штате с полноценным окладом и налогами), то практически всегда вариант аутсорсинга дешевле.</p>
+      <p>Для управяющей компании основной способ масштабирования бизнеса - прием на обслуживание большего количества домов. Чтобы жители нового дома захотели обслуживаться в Вашей управляющей компании, у нее должен быть имидж компании, которая вызывает доверие. Мы предложим именно такую стратегию, которая приведет Вас к желаемому результату.</p>
+    `,
   },
 ];
 
@@ -138,13 +202,12 @@ const dopPageList = [
 // Контакты в footer слева
 const contactsList = {
   phones: [
-    "8-999-222-11-22",
-    "8-999-111-33-44",
+    "+7-917-814-81-85",
   ],
-  texts: [
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor magni provident iure!",
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-  ],
+  text: `
+    <p>Рады будем проконсультировать вас по всем вопросам.</p>
+    <p>Если вам удобно, чтобы мы сами связались с вами, заполните форму обратной связи.</p>
+  `
 };
 
 // HTML для созания формы (для загрузки в модалку)

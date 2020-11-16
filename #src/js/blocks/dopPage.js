@@ -22,7 +22,7 @@ function dopPageTemplate(options) {
   options.forEach((el) => {
     dopPageBodyTextBox.insertAdjacentHTML("beforeend", `
     <div class="doppage__body-text doppage__body-text-none" data-doppage-body-element-icon-num="${el.id}">
-      <p>${el.text}</p>
+      ${el.text}
     </div>
     `)
   })

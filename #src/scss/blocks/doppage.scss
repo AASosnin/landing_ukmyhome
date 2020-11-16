@@ -181,6 +181,7 @@
     align-self: center;
     max-width: 70vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border: 1px solid $blueColor3;
     box-sizing: border-box;
@@ -198,6 +199,7 @@
       align-items: center;
       letter-spacing: 0.05em;
       color: $textColor;
+      padding: 5px 0;
     }
   }
 

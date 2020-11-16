@@ -1,18 +1,19 @@
 header {
-  height:260px;
+  height: 260px;
   position: relative;
 
   .left-rectangle-bg {
      background-image: url(../img/header_logo_bd.svg);
      background-size: 100%;
-     opacity: 1;
-     border-radius: 0px 50px 50px 0px;
-     position: absolute;
-     z-index: 0;
-     top: 15px;
-     left: -1px;
-     min-width: 1350 / 1440 * 100%;
-     height: 220px;
+    // background-color: #101010;
+    opacity: 1;
+    border-radius: 0px 50px 50px 0px;
+    position: absolute;
+    z-index: 0;
+    top: 15px;
+    left: -1px;
+    min-width: 1350 / 1440 * 100%;
+    height: 220px;
 
   }
   .left-rectangle {
@@ -93,6 +94,9 @@ header {
               color: #ffffff;
               font-size: 24px;
               line-height: 30px;
+              cursor: text;
+              -webkit-user-select: text;
+              -moz-user-select: text;
             }
           }
 
@@ -109,6 +113,7 @@ header {
               transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 
               span {
+                cursor: pointer;
                 color: $superRedColor;
                 font-family: $globalFont;
                 font-style: normal;
@@ -119,9 +124,11 @@ header {
             }
 
             .send-form-btn:hover {
-              color: #ffffff !important;
               background-color: transparent;
-              text-shadow: nthree;
+
+              span {
+                color: #ffffff;
+              }
             }
 
             .send-form-btn:hover:before {

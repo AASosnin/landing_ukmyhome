@@ -8,9 +8,7 @@ options.forEach((el) => {
     <li class="scrollAnimate">
       <div class="whatisfranchise__body-right-num"><span>${i}</span></div>
       <div class="whatisfranchise__body-right-text">
-        <p>
           ${el.text}
-        </p>
       </div>
     </li>
   `);

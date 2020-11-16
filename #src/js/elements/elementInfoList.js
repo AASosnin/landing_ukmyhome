@@ -20,7 +20,7 @@ function howToMakeUKTemplate(options) {
             </div>
           </div>
           <div class="element-info-list__li-info element-info-list__li-info-none">
-            <p>${el.text}</p>
+            ${el.text}
           </div>
         </div>
       </li>
